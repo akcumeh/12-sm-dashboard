@@ -1,28 +1,26 @@
 import { useState } from 'react';
+import Header from './components/Header';
+import Dashboard from './components/Dashboard';
 import Logo from './assets/images/favicon.ico';
 import './App.css';
 
 function App() {
-    const [count, setCount] = useState(0)
+    const [darkMode, setDarkMode] = useState(false);
+
+    const toggleDarkMode = () => {
+        setDarkMode(!darkMode);
+    };
 
     return (
-        <>
-            <div>
-                <a href="https://github.com/akcumeh" target="_blank">
-                    <img src={Logo} className="logo" alt="Angel logo" />
-                </a>
+        <div className={darkMode ? 'dark' : ''}>
+            <div className="min-h-screen bg-light-bg dark:bg-dark-bg transition-colors duration-300">
+                <Header
+                    darkMode={darkMode}
+                    onToggleDarkMode={toggleDarkMode} />
+                <Dashboard />
             </div>
-            <h1>Vite + React</h1>
-            <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.jsx</code> and save to test HMR
-                </p>
-            </div>
-        </>
-    )
+        </div>
+    );
 }
 
 export default App;
