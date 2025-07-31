@@ -10,6 +10,20 @@ export default {
             fontFamily: {
                 'inter': ['Inter', 'sans-serif'],
             },
+            fontSize: {
+                xs: "0.625rem",
+                sm: "0.75rem",
+                base: "1rem",
+                med: "1.5rem",
+                lg: "2rem",
+                xl: "3rem",
+                xxl: "5rem",
+            },
+            letterSpacing: {
+                tight: "-0.125rem",
+                wide: "0.3rem",
+                widest: "0.5rem",
+            },
             colors: {
                 primary: {
                     green: 'hsl(163, 72%, 41%)',
