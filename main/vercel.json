@@ -1,0 +1,51 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "functions": {
+    "api/tg.js": {
+      "maxDuration": 60
+    },
+    "api/**/*.js": {
+      "maxDuration": 30
+    }
+  },
+  "routes": [
+    {
+      "src": "/api/tg",
+      "dest": "/api/tg.js"
+    },
+    {
+      "src": "/api/wa",
+      "dest": "/api/wa.js"
+    },
+    {
+      "src": "/api/debug",
+      "dest": "/api/debug.js"
+    },
+    {
+      "src": "/api/setup",
+      "dest": "/api/setup.js"
+    },
+    {
+      "src": "/api/warmup",
+      "dest": "/api/warmup.js"
+    },
+    {
+      "src": "/api/daily-reminders",
+      "dest": "/api/daily-reminders.js"
+    },
+    {
+      "src": "/api/daily-resets",
+      "dest": "/api/daily-resets.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.js"
+    }
+  ]
+}
