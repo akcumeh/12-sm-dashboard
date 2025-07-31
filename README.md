@@ -43,8 +43,8 @@ Mobile:
 
 ### Links
 
-- [Solution](https://github.com/akcumeh/[sm-dashboard])
-- [Live site](https://akcumeh.github.io/[sm-dashboard])
+- [Solution](https://github.com/akcumeh/12-sm-dashboard)
+- [Live site](https://akcumeh.github.io/12-sm-dashboard)
 
 ## My process
 

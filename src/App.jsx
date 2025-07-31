@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Header from './components/Header';
 import Dashboard from './components/Dashboard';
 import Footer from './components/Footer';
-import Logo from './assets/images/icons/favicon.ico';
+import Logo from '/assets/images/icons/favicon.ico';
 import './App.css';
 
 function App() {

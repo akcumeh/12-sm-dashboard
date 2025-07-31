@@ -1,5 +1,5 @@
-import Logo from '../assets/images/icons/favicon.ico';
-import FM from '../assets/images/icons/fm_logo.png';
+import Logo from '/assets/images/icons/favicon.ico';
+import FM from '/assets/images/icons/fm_logo.png';
 
 const Footer = () => {
     return (

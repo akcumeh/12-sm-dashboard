@@ -1,10 +1,10 @@
 // Import icons
-import FacebookIcon from '../assets/images/icons/icon-facebook.svg';
-import TwitterIcon from '../assets/images/icons/icon-twitter.svg';
-import InstagramIcon from '../assets/images/icons/icon-instagram.svg';
-import YoutubeIcon from '../assets/images/icons/icon-youtube.svg';
-import UpIcon from '../assets/images/icons/icon-up.svg';
-import DownIcon from '../assets/images/icons/icon-down.svg';
+import FacebookIcon from '/assets/images/icons/icon-facebook.svg';
+import TwitterIcon from '/assets/images/icons/icon-twitter.svg';
+import InstagramIcon from '/assets/images/icons/icon-instagram.svg';
+import YoutubeIcon from '/assets/images/icons/icon-youtube.svg';
+import UpIcon from '/assets/images/icons/icon-up.svg';
+import DownIcon from '/assets/images/icons/icon-down.svg';
 
 const platformIcons = {
     facebook: FacebookIcon,
