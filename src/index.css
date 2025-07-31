@@ -15,16 +15,15 @@
 }
 
 @layer components {
-
-    /* Custom component styles can go here */
-    .card-shadow {
-        @apply shadow-sm hover:shadow-md transition-shadow duration-200;
-    }
-
     .metric-card {
-        @apply p-6 rounded-lg card-shadow;
+        @apply p-6 rounded-lg;
         @apply bg-light-card-bg dark:bg-dark-card-bg;
         @apply text-light-text-primary dark:text-dark-text-primary;
+        @apply transition-all duration-200 cursor-pointer;
+    }
+
+    .metric-card:hover {
+        @apply bg-light-text-secondary/10 dark:bg-dark-text-secondary/10;
     }
 
     .social-card {

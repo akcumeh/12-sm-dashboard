@@ -1,10 +1,10 @@
 // Import icons
-import FacebookIcon from '../assets/images/icon-facebook.svg';
-import TwitterIcon from '../assets/images/icon-twitter.svg';
-import InstagramIcon from '../assets/images/icon-instagram.svg';
-import YoutubeIcon from '../assets/images/icon-youtube.svg';
-import UpIcon from '../assets/images/icon-up.svg';
-import DownIcon from '../assets/images/icon-down.svg';
+import FacebookIcon from '../assets/images/icons/icon-facebook.svg';
+import TwitterIcon from '../assets/images/icons/icon-twitter.svg';
+import InstagramIcon from '../assets/images/icons/icon-instagram.svg';
+import YoutubeIcon from '../assets/images/icons/icon-youtube.svg';
+import UpIcon from '../assets/images/icons/icon-up.svg';
+import DownIcon from '../assets/images/icons/icon-down.svg';
 
 const platformIcons = {
     facebook: FacebookIcon,
@@ -18,7 +18,7 @@ const OverviewCard = ({ title, platform, value, change, isPositive }) => {
     const ChangeIcon = isPositive ? UpIcon : DownIcon;
 
     return (
-        <div className="metric-card flex flex-col justify-between w-auto gap-6">
+        <div className="metric-card flex flex-col justify-between w-auto gap-6 hover:bg-light-text-secondary/10 dark:hover:bg-dark-text-secondary/10 cursor-pointer transition-all duration-200">
             {/* Header with title and platform icon */}
             <div className="flex flex-row justify-between items-center">
                 <h3 className="text-sm font-bold text-light-text-secondary dark:text-dark-text-secondary">

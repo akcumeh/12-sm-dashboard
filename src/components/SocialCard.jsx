@@ -1,10 +1,10 @@
 // Import icons
-import FacebookIcon from '../assets/images/icon-facebook.svg';
-import TwitterIcon from '../assets/images/icon-twitter.svg';
-import InstagramIcon from '../assets/images/icon-instagram.svg';
-import YoutubeIcon from '../assets/images/icon-youtube.svg';
-import UpIcon from '../assets/images/icon-up.svg';
-import DownIcon from '../assets/images/icon-down.svg';
+import FacebookIcon from '../assets/images/icons/icon-facebook.svg';
+import TwitterIcon from '../assets/images/icons/icon-twitter.svg';
+import InstagramIcon from '../assets/images/icons/icon-instagram.svg';
+import YoutubeIcon from '../assets/images/icons/icon-youtube.svg';
+import UpIcon from '../assets/images/icons/icon-up.svg';
+import DownIcon from '../assets/images/icons/icon-down.svg';
 
 const platformIcons = {
     facebook: FacebookIcon,
@@ -26,7 +26,7 @@ const SocialCard = ({ platform, username, followers, todayChange, isPositive }) 
     const ChangeIcon = isPositive ? UpIcon : DownIcon;
 
     return (
-        <div className="social-card flex flex-col items-center">
+        <div className="social-card flex flex-col items-center hover:bg-light-text-secondary/10 dark:hover:bg-dark-text-secondary/10 cursor-pointer transition-all duration-200">
             {/* Card top border */}
             <div className={`absolute top-0 left-0 right-0 h-1 ${borderClass}`}></div>
 
