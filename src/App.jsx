@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Header from './components/Header';
 import Dashboard from './components/Dashboard';
+import Footer from './components/Footer';
 import Logo from './assets/images/favicon.ico';
 import './App.css';
 
@@ -12,12 +13,13 @@ function App() {
     };
 
     return (
-        <div className={darkMode ? 'dark' : ''}>
-            <div className="min-h-screen bg-light-bg dark:bg-dark-bg transition-colors duration-300">
+        <div className={`${darkMode ? 'dark' : ''}`}>
+            <div className="min-h-screen bg-light-bg dark:bg-dark-bg transition-colors duration-300 px-5 md:px-[6rem] md:py-2">
                 <Header
                     darkMode={darkMode}
                     onToggleDarkMode={toggleDarkMode} />
                 <Dashboard />
+                <Footer />
             </div>
         </div>
     );

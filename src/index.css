@@ -10,6 +10,7 @@
 
     body {
         @apply font-inter transition-colors duration-300;
+        background: transparent;
     }
 }
 

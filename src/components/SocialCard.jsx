@@ -26,7 +26,7 @@ const SocialCard = ({ platform, username, followers, todayChange, isPositive }) 
     const ChangeIcon = isPositive ? UpIcon : DownIcon;
 
     return (
-        <div className="social-card flex flex-col items-center w-auto mx-3 ">
+        <div className="social-card flex flex-col items-center">
             {/* Card top border */}
             <div className={`absolute top-0 left-0 right-0 h-1 ${borderClass}`}></div>
 
